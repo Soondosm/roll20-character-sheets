@@ -1,0 +1,133 @@
+table, th, td {
+  border: 1px solid black;
+} 
+
+.sheet-green, .sheet-green input {
+    background: #d9ead3; 
+} 
+
+.sheet-col table {
+    /*width : 48%;*/
+}
+
+table {
+    background: #ffffff;
+    width: 25em;
+}
+
+.sheet-spots td:nth-child(1) {
+    width : 10em;
+}
+
+.sheet-spots td:nth-child(2) {
+    width : 15em;
+}
+
+.sheet-potential .sheet-label {
+    width : 10em;
+}
+
+.sheet-potential .sheet-skill,
+.sheet-potential .sheet-skill input[type=text] {
+    width : 13em;
+}
+
+.sheet-potential .sheet-level {
+    width : 2em;
+}
+
+.sheet-dependants td:nth-child(1),
+.sheet-dependants th:nth-child(1) {
+    width : 13em;
+}
+
+.sheet-dependants input[type=text] {
+    width : calc(13em - 8px);
+}
+
+.sheet-dependants td:nth-child(2),
+.sheet-dependants td:nth-child(3),
+.sheet-dependants td:nth-child(4) {
+    width : 4em;
+}
+
+.sheet-dependants .sheet-type {
+    width: 4em;
+}
+
+.sheet-dependants th.sheet-blank {
+    width: 12em;
+}
+
+.sheet-dependants td {
+    text-align: center;
+}
+
+.sheet-threats .sheet-values div {
+    width: 6.5em;
+}
+
+.sheet-threats .sheet-clear div {
+    width 1em;
+}
+
+.sheet-threats .sheet-severity {
+    width: 1em;
+    transform: rotate(90deg) translateX(-100%);
+}
+
+input {
+    background-color: inherit;
+}
+
+input[type=number] {
+    width: 2em;
+} 
+
+td, 
+th {
+    padding: 4px;
+}
+
+/* stolen checkbox formatting */
+/* Hide actual radio/checkbox */
+/*input[type="radio"],*/
+input[type="checkbox"] {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    margin: -10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Fake checkbox */
+input[type="checkbox"] + span::before {
+    margin-right: 4px;
+    border: solid 1px #a8a8a8;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 2px #ccc;
+    background: #f6f6f6;
+    background: radial-gradient(#f6f6f6, #dfdfdf);
+    content: "";
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked + span::before {
+    content: "✓";
+}
+
+input[type="radio"] {
+  -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+  -moz-appearance: checkbox;    /* Firefox */
+  -ms-appearance: checkbox;     /* not currently supported */
+}
